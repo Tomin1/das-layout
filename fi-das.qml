@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 Tomi Leppänen
+ * Copyright (C) 2014-2015 Tomi Leppänen
  * Copyright (C) 2013 Jolla ltd and/or its subsidiary(-ies). All rights reserved.
  *
  * DAS layout based on Finnish layout from Sailfish OS.
@@ -38,6 +38,8 @@ import QtQuick 2.0
 import ".."
 
 KeyboardLayout {
+    splitSupported: true
+
     KeyboardRow {
         CharacterKey { caption: "p"; captionShifted: "P"; symView: "1"; symView2: "€" }
         CharacterKey { caption: "h"; captionShifted: "H"; symView: "2"; symView2: "£" }
@@ -67,6 +69,8 @@ KeyboardLayout {
     }
 
     KeyboardRow {
+        splitIndex: 5
+
         ShiftKey {}
 
         CharacterKey { caption: "f"; captionShifted: "F"; symView: "@"; symView2: "«" }
